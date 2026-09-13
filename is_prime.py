@@ -8,6 +8,11 @@ def is_prime(n):
     return True
 
 number = int(sys.argv[1])
+if number < 0:
+    print("Negative numbers are not prime by definition.")
+    sys.exit(0)
+
+
 if is_prime(number):
     print(number, "is prime.")
 else:
